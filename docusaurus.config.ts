@@ -73,7 +73,7 @@ const config: Config = {
       },
       items: [
         { to: '/home', label: 'Manual de usuario', position: 'left' },
-        { to: '/blog', label: 'API Docs', position: 'left' },
+        { to: '/api', label: 'API Docs', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
