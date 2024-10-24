@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Docs UNAN - León',
-  tagline: 'Dinosaurs are cool',
+  title: 'Sistema de Becas',
+  tagline: 'Todo respecto al funcionamiento y lógica del sistema de becas',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -73,7 +73,7 @@ const config: Config = {
       },
       items: [
         { to: '/home', label: 'Manual de usuario', position: 'left' },
-        { to: '/documentacion', label: 'Docs', position: 'left' },
+        { to: '/docs/intro', label: 'Docs', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',

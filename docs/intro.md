@@ -1,47 +1,43 @@
 ---
 sidebar_position: 1
 ---
+# Manual de usuario
+# Configuración
+El nuevo sistema de becas funciona de manera diferente, especialmente en lo que respecta a la configuración. A continuación, se explica cómo funciona y cómo afecta al inicio de sesión de los estudiantes.
 
-# Tutorial Intro
+## Desde la visión del administrador:
 
-Let's discover **Docusaurus in less than 5 minutes**.
+- **Regímenes y ciclos**:
+  - Se mantiene la funcionalidad de activar varios regímenes y ciclos a la vez, pero **no es posible activar dos ciclos del mismo régimen**. Esto ayuda a evitar conflictos en el sistema.
 
-## Getting Started
+- **Renovación y nuevas solicitudes**:
+  - Hasta ahora, la renovación se activaba de manera general para todos los tipos de becas activos. No activarla significaba acceso solo a nuevas solicitudes.
+  - Ahora, por cada tipo de beca, el administrador puede decidir si acepta **solo renovaciones** o **solo nuevas solicitudes**, lo que permite tener dos tipos de periodos activos para diferentes tipos de becas.
 
-Get started by **creating a new site**.
+- **Configuración de periodos**:
+  - Se mantiene la elección de día, mes, año, hora, minutos y segundos para el inicio y fin del periodo activo.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **Apertura para estudiantes específicos**:
+  - El sistema permite habilitar el acceso solo a ciertos estudiantes específicos, lo que significa que **solo ellos** podrán realizar nuevas solicitudes o renovaciones, dependiendo de los tipos de becas activos.
+  - Es obligatorio seleccionar el régimen al que pertenecen esos estudiantes, además del ciclo que se les habilitará.
+  - Aunque el sistema esté habilitado solo para algunos estudiantes, **todos los estudiantes** pueden iniciar sesión para revisar el estado de sus solicitudes, siempre y cuando su régimen académico coincida con uno de los habilitados en el sistema.
 
-### What you'll need
+## Desde la visión del estudiante:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+La lógica del sistema para realizar solicitudes se mantiene. Al iniciar sesión, el estudiante verá todas las solicitudes que ha realizado en el año lectivo actual, en orden descendente (la más reciente primero).
 
-## Generate a new site
+### Puntos importantes:
 
-Generate a new Docusaurus site using the **classic template**.
+- **Ciclo I**:
+  - Si el sistema está habilitado para el **ciclo I** de cualquier régimen, aunque haya tipos de becas habilitados para renovación, no se mostrará el botón de renovación. Esto se debe a que en el ciclo I **no es posible renovar** siendo este el primer ciclo del año lectivo.
 
-The classic template will automatically be added to your project after you run the command:
+- **Validación de solicitudes**:
+  - Al iniciar sesión, se validan todas las solicitudes del estudiante realizadas en el año para verificar qué gestión puede realizar.
+  - Si alguna solicitud fue aprobada, se compara el tipo de beca de esa solicitud con las becas activas. Solo podrá **renovar** si coincide, y si no coincide con ninguna, solo podrá hacer **solicitudes nuevas**.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Gestión permitida**:
+  - Al estudiante solo se le mostrarán los tipos de becas que coincidan con la gestión que está realizando. Por ejemplo, si está renovando, solo verá los tipos de becas que tengan activada la renovación.
+  - De esta manera, se evita que los estudiantes que deben renovar soliciten una beca nueva a la que no solicitaron antes.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- **Estudiantes habilitados específicamente**:
+  - Aunque haya becas activas que coincidan con la gestión del estudiante, no se le permitirá realizar la solicitud si hay al menos un estudiante en la lista de los que se habilitan específicamente.
