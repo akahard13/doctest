@@ -1,4 +1,6 @@
-
+---
+sidebar_position: 1
+---
 # Manual de usuario
 # Configuración
 El nuevo sistema de becas funciona de manera diferente, especialmente en lo que respecta a la configuración. A continuación, se explica cómo funciona y cómo afecta al inicio de sesión de los estudiantes.
