@@ -4,7 +4,7 @@ title: First Blog Post
 authors: [slorber, yangshun]
 tags: [hola, docusaurus]
 ---
-[HOLOOOO](/docs/tutorial-basics/congratulations)
+
 Lorem ipsum dolor sit amet...
 
 <!-- truncate -->
