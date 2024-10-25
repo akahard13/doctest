@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Introduccion
+# Introducción
 
 
 Este proyecto se hizo con la intención de mejorar tanto la lógica como el rendimiento del **Sistema de becas** de la **UNAN - León**, utilizando **PHP 8.3.11** que hasta la fecha de hoy **24 de Octubre de 2024** es la versión **latest**, esta versión de php de la mano con el **Framework Laravel** en su versión **11.9** apoyados de su documentación.
