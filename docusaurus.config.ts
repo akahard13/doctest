@@ -66,19 +66,18 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Documentación UNAN',
+      title: 'Sistema de Becas',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logounan.png',
       },
       items: [
-        { to: '/home', label: 'Manual de usuario', position: 'left' },
         { to: '/docs/intro', label: 'Docs', position: 'left' },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
